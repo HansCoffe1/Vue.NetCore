@@ -11,7 +11,7 @@ const routes = [
     path: '/',
     name: 'Index',
     component: () => import('@/views/Index'),
-    redirect: '/home',
+    redirect: '/PersonnelFileEmployeeInfo',
     children: [
       ...form,//Demo表单路由
       ...formsMulti,

@@ -33,7 +33,7 @@ module.exports = {
     config.plugins.delete('prefetch');
     //自下定义title
     config.plugin('html').tap((args) => {
-      args[0].title = 'vol开发框架';
+      args[0].title = '管理系统';
       return args;
     });
 

@@ -1,6 +1,6 @@
 <template>
   <div class="login-container">
-    <div class="project-name">VOL开发框架,Vue3版本</div>
+    <div class="project-name">管理系统</div>
     <div class="login-form">
       <div class="form-user" @keypress="loginPress">
         <div class="login-text">
@@ -37,17 +37,17 @@
 
       <!-- 账号信息 -->
       <div class="account-info">
-        <p>演示账号：admin666 &nbsp; &nbsp;密码:123456</p>
+        <!-- <p>演示账号：admin666 &nbsp; &nbsp;密码:123456</p>
         <p>本地账号：admin &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;密码:123456</p>
         <p><a href="https://jq.qq.com/?_wv=1027&k=Sqstuy0M" style="text-decoration: none"
             target="_blank">QQ3群:743852316(满)</a>
           &nbsp; &nbsp;&nbsp; &nbsp;
           <a href="https://qm.qq.com/cgi-bin/qm/qr?k=YRZBbf64qsUeEmh24I65u2aIZFn2C-Ha&jump_from=webapi&qr=1" style="text-decoration: none" target="_blank">QQ4群：959924606</a>
-          <!-- <a href="http://v2.volcore.xyz/document/guide" style="text-decoration: none" target="_blank">框架文档</a> -->
-        </p>
+          <a href="http://v2.volcore.xyz/document/guide" style="text-decoration: none" target="_blank">框架文档</a>
+        </p> -->
       </div>
       <!-- 链接位置 -->
-      <div class="app-link" >
+      <!-- <div class="app-link" >
         <a href="#" style="text-decoration: none">移动端扫码</a>
         <a>
           <i class="el-icon-chat-dot-round"></i> 小程序
@@ -60,18 +60,18 @@
           <i class="el-icon-document"></i>
           H5
           <img src="https://app-1256993465.cos.ap-nanjing.myqcloud.com/H5.png" /></a>
-      </div>
+      </div> -->
     </div>
 
     <!-- 页面底部 -->
     <div class="login-footer">
-      <a style="text-decoration: none" href="https://beian.miit.gov.cn/" target="_blank">京ICP备19056538号-1</a>
+      <!-- <a style="text-decoration: none" href="https://beian.miit.gov.cn/" target="_blank">京ICP备19056538号-1</a> -->
 
 
-      <a href="https://dotnet9.com/" style="text-decoration: none" target="blank">Dotnet9</a>
+      <!-- <a href="https://dotnet9.com/" style="text-decoration: none" target="blank">Dotnet9</a>
       <a href="https://space.bilibili.com/525836469" style="text-decoration: none" target="blank">NET视频教程(微软MVP-ACE录制)</a>
       <a href="https://www.cctalk.com/m/group/90268531" style="text-decoration: none" target="blank">VOL框架视频</a>
-      <a href="http://demo.volcore.xyz" style="text-decoration: none" target="blank">视频演示地址</a>
+      <a href="http://demo.volcore.xyz" style="text-decoration: none" target="blank">视频演示地址</a> -->
     </div>
 
     <img class="login-bg" src="/static/login_bg.png" />

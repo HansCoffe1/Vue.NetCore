@@ -133,6 +133,22 @@ let viewgird = [
         path: '/ExaminationManagement',
         name: 'ExaminationManagement',
         component: () => import('@/views/appmanager/examinationmanagement/ExaminationManagement.vue')
+    }    ,{
+        path: '/PersonnelFileEmployeeInfo',
+        name: 'PersonnelFileEmployeeInfo',
+        component: () => import('@/views/appmanager/personnelfileemployeeinfo/PersonnelFileEmployeeInfo.vue')
+    }    ,{
+        path: '/personnelfile_salary_history_view',
+        name: 'personnelfile_salary_history_view',
+        component: () => import('@/views/appmanager/personnelfilesalaryhistory/personnelfile_salary_history_view.vue')
+    }    ,{
+        path: '/personnelfile_salary_history',
+        name: 'personnelfile_salary_history',
+        component: () => import('@/views/appmanager/personnelfilesalaryhistory/personnelfile_salary_history.vue')
+    }    ,{
+        path: '/PersonnelFileWorkExperience',
+        name: 'PersonnelFileWorkExperience',
+        component: () => import('@/views/appmanager/personnelfileworkexperience/PersonnelFileWorkExperience.vue')
     }]
 
 export default viewgird

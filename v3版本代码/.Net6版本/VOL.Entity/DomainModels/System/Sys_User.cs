@@ -14,10 +14,19 @@ using VOL.Entity.SystemModels;
 
 namespace VOL.Entity.DomainModels
 {
-    [Entity(TableCnName = "用户管理",TableName = "Sys_User",ApiInput = typeof(ApiSys_UserInput),ApiOutput = typeof(ApiSys_UserOutput))]
+    [Entity(TableCnName = "用户管理",TableName = "Sys_User")]
     public partial class Sys_User:BaseEntity
     {
         /// <summary>
+       ///
+       /// </summary>
+       [Key]
+       [Display(Name ="User_Id")]
+       [Column(TypeName="int")]
+       [Required(AllowEmptyStrings=false)]
+       public int User_Id { get; set; }
+
+       /// <summary>
        ///帐号
        /// </summary>
        [Display(Name ="帐号")]
@@ -28,13 +37,14 @@ namespace VOL.Entity.DomainModels
        public string UserName { get; set; }
 
        /// <summary>
-       ///
+       ///姓名
        /// </summary>
-       [Key]
-       [Display(Name ="User_Id")]
-       [Column(TypeName="int")]
+       [Display(Name ="姓名")]
+       [MaxLength(20)]
+       [Column(TypeName="nvarchar(20)")]
+       [Editable(true)]
        [Required(AllowEmptyStrings=false)]
-       public int User_Id { get; set; }
+       public string UserTrueName { get; set; }
 
        /// <summary>
        ///性别
@@ -114,16 +124,6 @@ namespace VOL.Entity.DomainModels
        public string DeptIds { get; set; }
 
        /// <summary>
-       ///姓名
-       /// </summary>
-       [Display(Name ="姓名")]
-       [MaxLength(20)]
-       [Column(TypeName="nvarchar(20)")]
-       [Editable(true)]
-       [Required(AllowEmptyStrings=false)]
-       public string UserTrueName { get; set; }
-
-       /// <summary>
        ///密码
        /// </summary>
        [Display(Name ="密码")]
@@ -144,6 +144,7 @@ namespace VOL.Entity.DomainModels
        /// </summary>
        [Display(Name ="手机用户")]
        [Column(TypeName="int")]
+       [Editable(true)]
        public int? IsRegregisterPhone { get; set; }
 
        /// <summary>
@@ -152,6 +153,7 @@ namespace VOL.Entity.DomainModels
        [Display(Name ="手机号")]
        [MaxLength(11)]
        [Column(TypeName="nvarchar(11)")]
+       [Editable(true)]
        public string PhoneNo { get; set; }
 
        /// <summary>
@@ -181,7 +183,7 @@ namespace VOL.Entity.DomainModels
        ///是否可用
        /// </summary>
        [Display(Name ="是否可用")]
-       [Column(TypeName="tinyint")]
+       [Column(TypeName="sbyte")]
        [Editable(true)]
        [Required(AllowEmptyStrings=false)]
        public byte Enable { get; set; }

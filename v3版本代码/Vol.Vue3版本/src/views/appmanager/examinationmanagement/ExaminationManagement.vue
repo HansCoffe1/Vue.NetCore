@@ -35,12 +35,12 @@
                                {"title":"考核评语","field":"ExaminationComment","type":"text"},
                                {"title":"考核分数","field":"ExamScore","type":"rate"}]]);
             const searchFormFields = ref({"EmployeeName":"","ExaminationContent":"","ExaminationComment":"","ExamScore":[null,null]});
-            const searchFormOptions = ref([[{"dataKey":"所有用户真实姓名","data":[],"title":"员工姓名","field":"EmployeeName","type":"like"},{"title":"考核内容","field":"ExaminationContent","type":"text"},{"title":"考核评语","field":"ExaminationComment","type":"text"},{"title":"考核分数","field":"ExamScore","type":"range"}]]);
+            const searchFormOptions = ref([[{"dataKey":"所有用户真实姓名","data":[],"title":"员工姓名","field":"EmployeeName","type":"select"},{"title":"考核内容","field":"ExaminationContent","type":"text"},{"title":"考核评语","field":"ExaminationComment","type":"text"},{"title":"考核分数","field":"ExamScore","type":"range"}]]);
             const columns = ref([{field:'Id',title:'Id',type:'int',sort:true,width:220,hidden:true,readonly:true,require:true,align:'left'},
-                       {field:'EmployeeName',title:'员工姓名',type:'string',bind:{ key:'所有用户真实姓名',data:[]},sort:true,width:220,align:'left',sort:true},
-                       {field:'ExaminationContent',title:'考核内容',type:'string',sort:true,width:220,align:'left'},
-                       {field:'ExaminationComment',title:'考核评语',type:'string',sort:true,width:220,align:'left'},
-                       {field:'ExamScore',title:'考核分数',type:'decimal',sort:true,width:120,align:'left'}]);
+                       {field:'EmployeeName',title:'员工姓名',type:'string',bind:{ key:'所有用户真实姓名',data:[]},sort:true,width:70,align:'left',sort:true},
+                       {field:'ExaminationContent',title:'考核内容',type:'string',sort:true,width:120,align:'left'},
+                       {field:'ExaminationComment',title:'考核评语',type:'string',sort:true,width:120,align:'left'},
+                       {field:'ExamScore',title:'考核分数',type:'decimal',sort:true,width:50,align:'left'}]);
             const detail = ref({
                 cnName: "#detailCnName",
                 table: "#detailTable",
