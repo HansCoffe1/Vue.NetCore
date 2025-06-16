@@ -49,7 +49,8 @@ namespace VOL.WebApi
                            serverOptions.Limits.MaxRequestBodySize = 10485760;
                            // Set properties and call methods on options
                        });
-                       webBuilder.UseKestrel().UseUrls("http://*:9991");
+                       //webBuilder.UseKestrel().UseUrls("http://*:9991");
+                       webBuilder.UseKestrel().UseUrls("http://*:8061");
                        webBuilder.UseIIS();
                        webBuilder.UseStartup<Startup>();
                    }).UseServiceProviderFactory(new AutofacServiceProviderFactory());
