@@ -13,9 +13,11 @@ let loadingInstance;
 let loadingStatus = false;
 if (process.env.NODE_ENV == 'development') {
     axios.defaults.baseURL = 'http://127.0.0.1:9991/';
+    // axios.defaults.baseURL = 'http://127.0.0.1:8061/';
 }
 else if (process.env.NODE_ENV == 'debug') {
     axios.defaults.baseURL = 'http://127.0.0.1:9991/';
+    // axios.defaults.baseURL = 'http://127.0.0.1:8061/';
 }
 
 else if (process.env.NODE_ENV == 'production') {

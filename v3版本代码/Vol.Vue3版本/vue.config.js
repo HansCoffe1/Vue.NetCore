@@ -3,6 +3,7 @@ module.exports = {
   lintOnSave: false,
   devServer: {
     port: 9990,
+    // prot:8052,
     client: {
       overlay: false,
     },
