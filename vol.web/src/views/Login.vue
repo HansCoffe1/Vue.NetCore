@@ -7,7 +7,7 @@
       <div class="form-user" @keypress="loginPress">
         <div class="login-text">
           <div>
-            <div>Vol开发框架({{ $ts("账号登录") }})...</div>
+            <div>综合管理系统({{ $ts("账号登录") }})</div>
             <div class="login-line"></div>
           </div>
           <div style="flex: 1"></div>
@@ -58,7 +58,7 @@
           <span v-else>{{ $ts("正在登录") }}...</span>
         </el-button>
       </div>
-      <div class="app-link">
+      <!-- <div class="app-link">
         <a href="#" style="text-decoration: none">移动端扫码</a>
         <a>
           <i class="el-icon-chat-dot-round"></i> 小程序
@@ -74,10 +74,10 @@
           H5
           <img src="https://app-1256993465.cos.ap-nanjing.myqcloud.com/H5.png"
         /></a>
-      </div>
+      </div> -->
       <!-- 账号信息 -->
       <div class="account-info">
-        <p>演示账号:admin666&nbsp;密码:123456 &nbsp;&nbsp;本地账号:admin &nbsp;密码:123456</p>
+        <!-- <p>演示账号:admin666&nbsp;密码:123456 &nbsp;&nbsp;本地账号:admin &nbsp;密码:123456</p>
         <p></p>
         <p style="text-align: center;">
           <a
@@ -97,7 +97,7 @@
         <p style="text-align: center;">
            <a href="https://space.bilibili.com/525836469" style="text-decoration: none;" target="_blank"
             >NET视频教程(微软MVP-ACE录制)</a
-          ></p>
+          ></p> -->
       </div>
     </div>
   </div>

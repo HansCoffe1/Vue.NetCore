@@ -217,6 +217,22 @@ let viewgird = [
         path: '/TestService',
         name: 'TestService',
         component: () => import('@/views/mes/mes/TestService.vue')
+    }    ,{
+        path: '/OaPersonnelFileEmployeeInfo',
+        name: 'OaPersonnelFileEmployeeInfo',
+        component: () => import('@/views/oa/oapersonnelfileemployeeinfo/OaPersonnelFileEmployeeInfo.vue')
+    }    ,{
+        path: '/OaPersonnelFileSalaryHistory',
+        name: 'OaPersonnelFileSalaryHistory',
+        component: () => import('@/views/oa/oapersonnelfilesalaryhistory/OaPersonnelFileSalaryHistory.vue')
+    }    ,{
+        path: '/OaPersonnelFileWorkExperience',
+        name: 'OaPersonnelFileWorkExperience',
+        component: () => import('@/views/oa/oapersonnelfileworkexperience/OaPersonnelFileWorkExperience.vue')
+    }    ,{
+        path: '/OaExaminationManagement',
+        name: 'OaExaminationManagement',
+        component: () => import('@/views/oa/oaexaminationmanagement/OaExaminationManagement.vue')
     }]
 
 //上面的demo、MES开头的都是示例菜单，可以任意删除 

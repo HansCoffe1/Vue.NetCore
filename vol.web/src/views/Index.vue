@@ -8,7 +8,7 @@
     <div class="vol-aside" :style="{ width: (isCollapse ? 63 : 200) + 'px' }">
       <div class="header">
         <div class="vol-aside-project-name">
-          .Net8 Vol开发框架
+          综合管理系统
         </div>
         <!-- 这里可以改为logo显示 -->
         <!-- <img  src="@/assets/imgs/logo.png" /> -->
