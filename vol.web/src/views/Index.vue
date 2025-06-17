@@ -207,31 +207,31 @@ const {
 const { navCloseTabs, open, close, selectNav, removeNav,navRefreshPage } = IndexTabs(proxy, dataConfig, router)
 
 navigation.push({ orderNo: '0', id: '1', name: '首页', path: '/home' })
-links.value.push(...[{
-  text: 'App移动端',
-  path: 'http://app.volcore.xyz/',
-  id: -1,
-  icon: 'el-icon-mobile',
-  left: true
-},{
-  text: '框架文档',
-  path: 'http://v3.volcore.xyz/',
-  id: -1,
-  icon: 'el-icon-folder-opened',
-  left: true
-},{
-  text: '企业版本',
-  path: 'http://pro.volcore.xyz/',
-  id: -1,
-  icon: 'el-icon-coin',
-  left: true
-},{
-  text: '框架视频',
-  path: 'https://www.cctalk.com/m/group/90268531',
-  id: -1,
-  icon: 'el-icon-video-camera',
-  left: true
-}])
+// links.value.push(...[{
+//   text: 'App移动端',
+//   path: 'http://app.volcore.xyz/',
+//   id: -1,
+//   icon: 'el-icon-mobile',
+//   left: true
+// },{
+//   text: '框架文档',
+//   path: 'http://v3.volcore.xyz/',
+//   id: -1,
+//   icon: 'el-icon-folder-opened',
+//   left: true
+// },{
+//   text: '企业版本',
+//   path: 'http://pro.volcore.xyz/',
+//   id: -1,
+//   icon: 'el-icon-coin',
+//   left: true
+// },{
+//   text: '框架视频',
+//   path: 'https://www.cctalk.com/m/group/90268531',
+//   id: -1,
+//   icon: 'el-icon-video-camera',
+//   left: true
+// }])
 
 const userDropItems = reactive([
   { text: '消息管理', icon: 'el-icon-bell', hidden: true },

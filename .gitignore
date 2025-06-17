@@ -107,3 +107,5 @@
 /vol.api/VOL.WebApi/obj
 /vol.api/VOL.WebApi/bin
 /vol.api.sqlsugar/.vs
+/vol.api/VOL.OA/bin
+/vol.api/VOL.OA/obj

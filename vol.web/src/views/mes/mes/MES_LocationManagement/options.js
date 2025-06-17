@@ -7,7 +7,6 @@ export default function(){
         footer: "Foots",
         cnName: '货位管理',
         name: 'MES_LocationManagement',
-        newTabEdit: false,
         url: "/MES_LocationManagement/",
         sortName: "CreateDate"
     };

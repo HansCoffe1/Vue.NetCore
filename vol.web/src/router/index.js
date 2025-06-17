@@ -7,15 +7,16 @@ const routes = [
     path: '/',
     name: 'Index',
     component: () => import('@/views/Index.vue'),
-    redirect: '/home',
+    redirect: '/OaPersonnelFileEmployeeInfo',
     children: [
       ...viewgird,
       ...redirect,
+      // {
+      //   path: '/home',
+      //   name: 'home',
+      //   component: () => import('@/views/Home.vue')
+      // }, 
       {
-        path: '/home',
-        name: 'home',
-        component: () => import('@/views/Home.vue')
-      }, {
         path: '/UserInfo',
         name: 'UserInfo',
         component: () => import('@/views/sys/UserInfo.vue')
