@@ -63,6 +63,15 @@ namespace VOL.Entity.DomainModels
        public string EmployeePictureUrl { get; set; }
 
        /// <summary>
+       ///员工岗位
+       /// </summary>
+       [Display(Name ="员工岗位")]
+       [MaxLength(255)]
+       [Column(TypeName="nvarchar(255)")]
+       [Editable(true)]
+       public string EmployeePosition { get; set; }
+
+       /// <summary>
        ///身份证号
        /// </summary>
        [Display(Name ="身份证号")]
@@ -99,9 +108,9 @@ namespace VOL.Entity.DomainModels
        public string Email { get; set; }
 
        /// <summary>
-       ///紧急联系人手机号
+       ///紧急联系人
        /// </summary>
-       [Display(Name ="紧急联系人手机号")]
+       [Display(Name ="紧急联系人")]
        [MaxLength(255)]
        [Column(TypeName="nvarchar(255)")]
        [Editable(true)]

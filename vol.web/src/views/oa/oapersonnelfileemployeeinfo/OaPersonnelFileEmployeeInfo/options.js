@@ -14,10 +14,11 @@ export default function(){
     const tableCNName = table.cnName;
     const newTabEdit = false;
     const key = table.key;
-    const editFormFields = {"User_Id":"","EmployeeNo":"","EmployeePictureUrl":"","Phone":"","Id_Number":"","Gender":"","Email":"","Emergency_Contact":"","Address_Home":"","Address_Work":"","Birth_Date":"","Hire_Date":"","Status":""};
+    const editFormFields = {"User_Id":"","EmployeeNo":"","EmployeePictureUrl":"","EmployeePosition":"","Phone":"","Id_Number":"","Gender":"","Email":"","Emergency_Contact":"","Address_Home":"","Address_Work":"","Birth_Date":"","Hire_Date":"","Status":""};
     const editFormOptions = [[{"dataKey":"所有用户真实姓名","data":[],"title":"姓名","field":"User_Id","type":"select"}],
                               [{"title":"员工工号","field":"EmployeeNo","type":"text"}],
                               [{"title":"员工照片","field":"EmployeePictureUrl","type":"img"}],
+                              [{"dataKey":"基本信息的所有岗位","data":[],"title":"员工岗位","field":"EmployeePosition","type":"text"}],
                               [{"title":"手机号","field":"Phone","type":"phone"}],
                               [{"title":"身份证号","field":"Id_Number","type":"text"}],
                               [{"dataKey":"性别","data":[],"title":"性别","field":"Gender","type":"select"}],
@@ -28,13 +29,14 @@ export default function(){
                               [{"title":"生日","field":"Birth_Date","type":"date"}],
                               [{"title":"入职日期","field":"Hire_Date","type":"date"}],
                               [{"title":"员工状态","field":"Status","type":"text"}]];
-    const searchFormFields = {"User_Id":"","EmployeeNo":"","Phone":"","Address_Work":""};
-    const searchFormOptions = [[{"dataKey":"所有用户真实姓名","data":[],"title":"姓名","field":"User_Id","type":"select"},{"title":"员工工号","field":"EmployeeNo","type":"like"},{"title":"手机号","field":"Phone","type":"like"},{"title":"工作地址","field":"Address_Work","type":"like"}]];
+    const searchFormFields = {"User_Id":"","EmployeeNo":"","EmployeePosition":"","Phone":""};
+    const searchFormOptions = [[{"dataKey":"所有用户真实姓名","data":[],"title":"姓名","field":"User_Id","type":"select"},{"title":"员工工号","field":"EmployeeNo","type":"like"},{"dataKey":"基本信息的所有岗位","data":[],"title":"员工岗位","field":"EmployeePosition","type":"select"},{"title":"手机号","field":"Phone","type":"like"}]];
     const columns = [{field:'Employee_Id',title:'员工唯一ID（主键）',type:'int',width:110,hidden:true,readonly:true,require:true,align:'left'},
-                       {field:'User_Id',title:'姓名',type:'int',link:true,bind:{ key:'所有用户真实姓名',data:[]},width:110,align:'left'},
+                       {field:'User_Id',title:'姓名',type:'int',bind:{ key:'所有用户真实姓名',data:[]},width:110,align:'left'},
                        {field:'Full_Name',title:'姓名',type:'string',sort:true,width:220,hidden:true,align:'left'},
                        {field:'EmployeeNo',title:'员工工号',type:'string',sort:true,width:120,align:'left'},
                        {field:'EmployeePictureUrl',title:'员工照片',type:'img',sort:true,width:120,align:'left'},
+                       {field:'EmployeePosition',title:'员工岗位',type:'string',bind:{ key:'基本信息的所有岗位',data:[]},sort:true,width:120,align:'left'},
                        {field:'Id_Number',title:'身份证号',type:'string',sort:true,width:220,align:'left'},
                        {field:'Gender',title:'性别',type:'string',bind:{ key:'性别',data:[]},sort:true,width:110,align:'left'},
                        {field:'Phone',title:'手机号',type:'string',sort:true,width:220,align:'left'},
