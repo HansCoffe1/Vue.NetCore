@@ -42,6 +42,7 @@
     //生成对象属性初始化
     const onInit = async ($vm) => {
         gridRef = $vm;
+        gridRef.setFixedSearchForm(true);
         //与jsx中的this.xx使用一样，只需将this.xx改为gridRef.xx
         //更多属性见：https://v3.volcore.xyz/docs/view-grid
     }

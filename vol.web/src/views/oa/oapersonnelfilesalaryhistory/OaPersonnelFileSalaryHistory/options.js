@@ -20,9 +20,9 @@ export default function(){
                               [{"title":"奖金","field":"Bonus","type":"decimal"}],
                               [{"title":"薪资生效日期","field":"Effective_Date","type":"date"}],
                               [{"title":"薪资结束日期","field":"End_Date","type":"date"}]];
-    const searchFormFields = {"User_Id":"","Base_Salary":[null,null],"Bonus":[null,null],"Effective_Date":"","End_Date":""};
-    const searchFormOptions = [[{"dataKey":"所有用户真实姓名","data":[],"title":"姓名","field":"User_Id","type":"select"}],[{"title":"基础工资","field":"Base_Salary","type":"range"}],[{"title":"奖金","field":"Bonus","type":"range"}],[{"title":"薪资生效日期","field":"Effective_Date","type":"date"}],[{"title":"薪资结束日期","field":"End_Date","type":"date"}]];
-    const columns = [{field:'User_Id',title:'姓名',type:'int',bind:{ key:'所有用户真实姓名',data:[]},sort:true,width:60,align:'left'},
+    const searchFormFields = {"User_Id":"","Base_Salary":[null,null],"Bonus":[null,null]};
+    const searchFormOptions = [[{"dataKey":"所有用户真实姓名","data":[],"title":"姓名","field":"User_Id","type":"select"},{"title":"基础工资","field":"Base_Salary","type":"range"},{"title":"奖金","field":"Bonus","type":"range"}]];
+    const columns = [{field:'User_Id',title:'姓名',type:'int',link:true,bind:{ key:'所有用户真实姓名',data:[]},sort:true,width:60,align:'left'},
                        {field:'Salary_Id',title:'薪资记录ID（主键）',type:'int',width:110,hidden:true,readonly:true,require:true,align:'left'},
                        {field:'Employee_Id',title:'姓名',type:'int',width:60,hidden:true,align:'left'},
                        {field:'Base_Salary',title:'基础工资',type:'decimal',sort:true,width:80,align:'left'},

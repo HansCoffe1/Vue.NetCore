@@ -45,6 +45,24 @@ namespace VOL.Entity.DomainModels
        public string Full_Name { get; set; }
 
        /// <summary>
+       ///员工工号
+       /// </summary>
+       [Display(Name ="员工工号")]
+       [MaxLength(255)]
+       [Column(TypeName="nvarchar(255)")]
+       [Editable(true)]
+       public string EmployeeNo { get; set; }
+
+       /// <summary>
+       ///员工照片
+       /// </summary>
+       [Display(Name ="员工照片")]
+       [MaxLength(255)]
+       [Column(TypeName="nvarchar(255)")]
+       [Editable(true)]
+       public string EmployeePictureUrl { get; set; }
+
+       /// <summary>
        ///身份证号
        /// </summary>
        [Display(Name ="身份证号")]

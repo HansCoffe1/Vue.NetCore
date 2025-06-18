@@ -22,9 +22,9 @@ export default function(){
                               [{"title":"职位描述","field":"Description","type":"textarea"}],
                               [{"title":"职位职责","field":"Position_Responsibilities","type":"textarea"}],
                               [{"title":"公司名称","field":"Company_Name","type":"text"}]];
-    const searchFormFields = {"User_Id":"","Start_Date":"","End_Date":"","Position":"","Description":"","Position_Responsibilities":"","Company_Name":""};
-    const searchFormOptions = [[{"dataKey":"所有用户真实姓名","data":[],"title":"姓名","field":"User_Id","type":"select"}],[{"title":"开始日期","field":"Start_Date","type":"date"}],[{"title":"结束日期","field":"End_Date","type":"date"}],[{"title":"职位","field":"Position","type":"like"}],[{"title":"职位描述","field":"Description","type":"like"}],[{"title":"职位职责","field":"Position_Responsibilities","type":"like"}],[{"title":"公司名称","field":"Company_Name","type":"like"}]];
-    const columns = [{field:'User_Id',title:'姓名',type:'int',bind:{ key:'所有用户真实姓名',data:[]},sort:true,width:60,align:'left'},
+    const searchFormFields = {"User_Id":"","Position":""};
+    const searchFormOptions = [[{"dataKey":"所有用户真实姓名","data":[],"title":"姓名","field":"User_Id","type":"select"},{"title":"职位","field":"Position","type":"like"}]];
+    const columns = [{field:'User_Id',title:'姓名',type:'int',link:true,bind:{ key:'所有用户真实姓名',data:[]},sort:true,width:90,align:'left'},
                        {field:'Start_Date',title:'开始日期',type:'date',sort:true,width:150,align:'left'},
                        {field:'End_Date',title:'结束日期',type:'date',sort:true,width:150,align:'left'},
                        {field:'Position',title:'职位',type:'string',sort:true,width:110,align:'left'},
